@@ -12,7 +12,7 @@ pipeline {
 
 		stage('Test') {
 			steps {
-				python 'name.py'
+				echo 'Test has been over..'
 			}
 		}
 
