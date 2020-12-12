@@ -1,6 +1,6 @@
 #!/usr/bin/groovy
 pipeline {
-	agent any
+	agent { docker { image 'python:3.5.1' } }
 
 	stages {
 
@@ -12,7 +12,7 @@ pipeline {
 
 		stage('Test') {
 			steps {
-				echo 'Testing..'
+				python name.py
 			}
 		}
 
