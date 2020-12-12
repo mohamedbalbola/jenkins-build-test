@@ -12,11 +12,7 @@ pipeline {
 
 		stage('Test') {
 			steps {
-<<<<<<< HEAD
-				python name.py
-=======
-				echo 'Test has been over..'
->>>>>>> bc4163332acf4ef3e954e299311c3647108c59f2
+				python "name.py"
 			}
 		}
 
