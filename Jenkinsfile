@@ -1,6 +1,6 @@
 #!/usr/bin/groovy
 pipeline {
-    agent { docker { image 'python:latest' } }
+    agent any
 
 	stages {
 
