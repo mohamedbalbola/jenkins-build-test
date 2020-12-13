@@ -6,13 +6,13 @@ pipeline {
 
 		stage('Build') {
 			steps {
-				python name.py
+				echo 'Deploying....'
 			}
 		}
 
 		stage('Test') {
 			steps {
-				python name.py
+				echo 'Deploying....'
 			}
 		}
 
